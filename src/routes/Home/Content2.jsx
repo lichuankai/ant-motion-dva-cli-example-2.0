@@ -98,65 +98,6 @@ class Banner extends React.Component {
         </QueueAnim>
       </Element>,
     ];
-    const childrenData = [
-      {
-        title: '<img width="100%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
-        content: '维权援助-- 知识产权维权援助',
-        button: 'Learn More',
-      },
-      {
-        title: '<img width="100%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
-        content: '文字、录音、录像、拍照取证全覆盖',
-        button: 'Learn More',
-      },
-      {
-        title: '<img width="100%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
-        content: '采用移动端的维权取证',
-        button: 'Learn More',
-      }
-    ];
-    const childrenToRender = childrenData.map((item, i) => {
-      const title = item.title;
-      const content = item.content;
-      const button = item.button;
-      return (<Element
-        key={i}
-        prefixCls="banner-user-elem"
-      >
-        <BgElement
-          className={`bg bg${i}`}
-          key="bg"
-        />
-        <QueueAnim
-          type={['bottom', 'top']} delay={200}
-          className={`${props.className}-title`}
-          key="text"
-          id={`${props.id}-wrapperBlock${i}`}
-        >
-          <span
-            className="logo"
-            key="logo"
-            id={`${props.id}-titleBlock${i}`}
-            dangerouslySetInnerHTML={{
-              __html: title,
-            }}
-          />
-          <p
-            key="content"
-            id={`${props.id}-contentBlock${i}`}
-          >
-            {content}
-          </p>
-          <Button
-            type="ghost"
-            key="button"
-            id={`${props.id}-buttonBlock${i}`}
-          >
-            {button}
-          </Button>
-        </QueueAnim>
-      </Element>);
-    });
     return (
       <OverPack
         {...props}
