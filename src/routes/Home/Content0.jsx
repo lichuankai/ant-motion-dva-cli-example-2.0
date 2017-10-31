@@ -19,6 +19,7 @@ class Banner extends React.Component {
           className={`bg bg${0}`}
           key="bg"
         />
+        <div className="bg-gray"></div>
         <QueueAnim
           type={['bottom', 'top']} delay={200}
           className={`${props.className}-title`}
@@ -91,7 +92,7 @@ class Banner extends React.Component {
             <div className="clearfax">
               <div className="div1"><img src="/downQRcode.png" /></div>
               <div className="div2">
-                  <a className="apple" href="https://itunes.apple.com/cn/app/zhi-shi-chan-quan-yi-dian-tong/id892264333?mt=8 " target="_blank"><i className="icon-index-apple"></i>APP Store</a>
+                  <a className="apple" href="https://itunes.apple.com/cn/app/zhi-shi-chan-quan-yi-dian-tong/id892264333?mt=8 " target="_blank"><i></i>APP Store</a>
                   <a className="android" href="http://www.sdips.gov.cn/attachment/APP-Android.apk " target="_blank"><i></i>Android</a>
               </div>
             </div>
