@@ -19,7 +19,8 @@
     "rc-scroll-anim": "2.x",
     "rc-tween-one": "1.x",
     "react": "^15.4.0",
-    "react-dom": "^15.4.0"
+    "react-dom": "^15.4.0",
+    "react-native-vector-icons": "^4.4.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",

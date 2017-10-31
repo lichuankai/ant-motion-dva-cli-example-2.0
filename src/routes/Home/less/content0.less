@@ -22,13 +22,18 @@
     overflow: hidden;
   }
   .bg0 {
-    background: url("/banner.png") center;
+    background: url("/banner01.png") center;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
   }
   .bg1{
-    background: url("https://zos.alipayobjects.com/rmsportal/xHxWkcvaIcuAdQl.jpg") center;
+    background: url("/banner03.jpg") center;
   }
   .bg2{
-    background: url("https://zos.alipayobjects.com/rmsportal/xHxWkcvaIcuAdQl.jpg") center;
+    background: url("/banner02.jpg") center;
   }
   .bg {
     width: 100%;
@@ -55,7 +60,7 @@
     margin: auto;
     font-size: 14px;
     color: @template-text-color-light;
-    width: 550px;
+    width: 650px;
     text-align: center;
     & .logo {
       width: 350px;
@@ -64,18 +69,86 @@
       display: inline-block;
       position: relative;
     }
-    & p {
+    & h1 {
+      white-space:nowrap; 
       margin-bottom: 20px;
+      color: #fff;
+      font-size: 56px;
       word-wrap: break-word;
     }
-    & button {
+    & h2 {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: #fff;
+      font-size: 28px;
+      word-wrap: break-word;
+    }
+    & .content {
+      text-align: left;
+      width: 500px;
+      position: absolute;
+      left: 55%;
+    }
+    & .div1 {
+      float: left;
+      & img{
+        width: 175px;
+      }
+    }
+    & .div2{
+      & .apple{
+        background: #fff;
+        padding: 0 0 0 38px;
+        width: 222px;
+        height: 66px;
+        line-height: 66px;
+        font-size: 30px;
+        border-radius: 3px;
+        color: #494751;
+        display: inline-block;
+        transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+        margin-bottom: 20px;
+        margin-left: 15px;
+      }
+      & .android{
+        background: #fff;
+        padding: 0 0 0 38px;
+        width: 222px;
+        height: 66px;
+        line-height: 66px;
+        font-size: 30px;
+        border-radius: 3px;
+        color: #494751;
+        display: inline-block;
+        transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+        margin-left: 15px;
+        margin-top: 20px;
+      }
+    }
+
+
+    & .content03{
+      color: #6495ED;
+      text-align: center;
+      width: 650px;
+      margin: 0 auto;
+      & img{
+        margin: 20px;
+        width: 25vh;
+      }
+    }
+    & .clearfax{
+      clear: both;
+    }
+    & .retrieval {
+      margin-top: 30vh;
       border: 1px solid #fff;
       color: #fff;
       background: transparent;
       box-shadow: 0 0 0 transparent;
       transition: background .45s @ease-out, box-shadow .45s @ease-out;
       line-height: 36px;
-      font-size: 16px;
+      font-size: 24px;
       height: 36px;
       & span {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -119,8 +192,112 @@
         left: 0;
       }
     }
+    & h1 {
+      margin-bottom: 20px;
+      color: #fff;
+      font-size: 24px;
+      word-wrap: break-word;
+    }
+
+    & h2{
+      font-size: 20px;
+    }
+
+    & .retrieval{
+      font-size: 20px;
+    }
+    & .content {
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+      position: static;
+      & .clearfax{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 300px;
+      }
+      & .title1{
+        font-size: 28px;
+      }
+    }
+    & .div2{
+      & .apple{
+        margin-top: 10px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        box-shadow: 0 0 0 transparent;
+        transition: background .45s @ease-out, box-shadow .45s @ease-out;
+        line-height: 36px;
+        font-size: 20px;
+        width: 175px;
+        height: 36px;
+        & span {
+          text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+          transition: text-shadow .45s @ease-out;
+        }
+        &:hover {
+          color: #fff;
+          border-color: #fff;
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
+          & span {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
+          }
+        }
+      }
+      & .android{
+        margin-top: 5px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        box-shadow: 0 0 0 transparent;
+        transition: background .45s @ease-out, box-shadow .45s @ease-out;
+        line-height: 36px;
+        width: 175px;
+        font-size: 20px;
+        height: 36px;
+        & span {
+          text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+          transition: text-shadow .45s @ease-out;
+        }
+        &:hover {
+          color: #fff;
+          border-color: #fff;
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
+          & span {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
+          }
+        }
+      }
+    }
+
+    & .div1{
+      margin: 0 auto;
+      text-align: center;
+      float: none;
+    }
+
+    & .div2{
+      float: none;
+    }
+    & .content03{
+      text-align: center;
+      margin: 0 auto;
+      position: static;
+      width: 300px;
+      & .title1{
+        font-size: 24px;
+      }
+      & .title2{
+        font-size: 20px;
+      }
+    }
+
     .bg {
-      background-attachment: inherit;
+      // background-attachment: inherit;
     }
   }
 }
