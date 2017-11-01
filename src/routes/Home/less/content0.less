@@ -24,6 +24,11 @@
   .bg0 {
     background: url("/banner01.png") center;
 
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
     // -webkit-filter: blur(2px);
     // -moz-filter: blur(2px);
     // -o-filter: blur(2px);
@@ -46,10 +51,10 @@
     background-size: cover;
   }
   .bg-gray{
-    background-color: gray;
-    filter:alpha(opacity=40);  /*支持 IE 浏览器*/
-    -moz-opacity:0.40; /*支持 FireFox 浏览器*/
-    opacity:0.40;  /*支持 Chrome, Opera, Safari 等浏览器*/
+    background-color: black;
+    filter:alpha(opacity=50);  /*支持 IE 浏览器*/
+    -moz-opacity:0.50; /*支持 FireFox 浏览器*/
+    opacity:0.50;  /*支持 Chrome, Opera, Safari 等浏览器*/
     width: 100%;
     height: 100%;
     z-index: 10;

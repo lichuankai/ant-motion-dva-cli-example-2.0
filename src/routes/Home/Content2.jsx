@@ -95,6 +95,7 @@ class Banner extends React.Component {
               <img src="/downQRcode.png" />
             </p>
           </QueueAnim>
+
         </QueueAnim>
       </Element>,
     ];

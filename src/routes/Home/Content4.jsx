@@ -72,7 +72,6 @@ class Content extends React.Component {
             component="p"
             id={`${props.id}-titleContent`}
           >
-            服务项目的简介
           </TweenOne>
           <QueueAnim
             key="ul"
