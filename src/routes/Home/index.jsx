@@ -9,6 +9,9 @@ import Content1 from './Content1';
 import Content2 from './Content2';
 import Content3 from './Content3';
 import Content4 from './Content4';
+import Content5 from './Content5';
+import Content6 from './Content6';
+import Content7 from './Content7';
 import Footer from './Footer';
 import Point from './Point';
 
@@ -62,6 +65,9 @@ export default class Home extends React.Component {
       <Content2 id="content_3_0" key="content_3_0" isMode={this.state.isMode}/>,
       <Content3 id="content_4_0" key="content_4_0" isMode={this.state.isMode}/>,
       <Content4 id="content_5_0" key="content_5_0" isMode={this.state.isMode}/>,
+      <Content5 id="content_6_0" key="content_6_0" isMode={this.state.isMode}/>,
+      <Content6 id="content_7_0" key="content_7_0" isMode={this.state.isMode}/>,
+      <Content7 id="content_8_0" key="content_8_0" isMode={this.state.isMode}/>,
       <Footer id="footer_0_0" key="footer_0_0" isMode={this.state.isMode}/>,
       // 导航和页尾不进入锚点区，如果需要，自行添加;
       <Point key="list" ref="list" data={['content_1_0', 'content_2_0', 'content_3_0', 'content_4_0', 'content_5_0']} />,
