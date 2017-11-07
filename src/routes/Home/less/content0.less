@@ -4,7 +4,7 @@
 .@{banner1} {
   width: 100%;
   // 如果在第一屏且导航位置为 relative, 一屏为 height: calc(~"100vh - 64px");
-  height: 100vh;
+  height: 80vh;
   position: relative;
   border-color: #666;
   background: #fff;
@@ -36,7 +36,7 @@
     // filter: blur(2px);
   }
   .bg1{
-    background: url("/banner03.jpg") center;
+    background: url("/banner03.png") center;
   }
   .bg2{
     background: url("/banner02.jpg") center;
@@ -76,108 +76,124 @@
     margin: auto;
     font-size: 14px;
     color: @template-text-color-light;
-    width: 650px;
+    width: 750px;
     text-align: center;
     z-index: 11;
     & .logo {
-      width: 350px;
-      left: 30px;
-      margin: auto;
       display: inline-block;
-      position: relative;
+      position: absolute;
+      left: 1%;
+      width: 280px;     //150
+      line-height: 60px;    //64
     }
     & h1 {
       white-space:nowrap; 
-      margin-bottom: 20px;
+      margin-bottom: 5vh;
       color: #fff;
       font-size: 56px;
       word-wrap: break-word;
+      letter-spacing: 6px
     }
     & h2 {
-      margin-top: 30px;
-      margin-bottom: 20px;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
       color: #fff;
       font-size: 28px;
       word-wrap: break-word;
+      letter-spacing: 6px
     }
     & .content {
       text-align: left;
       width: 500px;
       position: absolute;
       left: 55%;
+      & h1{
+        margin-bottom: -5vh;
+      }
     }
     & .div1 {
       float: left;
       & img{
-        width: 175px;
+        height: 18vh;
       }
     }
     & .div2{
       & .apple{
         background: #fff;
         padding: 0 0 0 38px;
-        width: 222px;
-        height: 66px;
-        line-height: 66px;
+        width: 260px;
+        height: 8vh;
+        // line-height: 66px;
         font-size: 30px;
         border-radius: 3px;
         color: #494751;
         display: inline-block;
         transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
-        margin-bottom: 20px;
         margin-left: 15px;
+        margin-bottom: 1vh;
+        vertical-align: middle;
+        & img{
+          height:40px;
+          margin-top: 10px;
+          float: left;
+        }
+        & .txt{
+          float: left;
+          margin-top: 10px;
+        }
       }
       & .android{
         background: #fff;
         padding: 0 0 0 38px;
-        width: 222px;
-        height: 66px;
-        line-height: 66px;
+        width: 260px;
+        height: 8vh;
+        // line-height: 66px;
         font-size: 30px;
         border-radius: 3px;
         color: #494751;
         display: inline-block;
         transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
         margin-left: 15px;
-        margin-top: 20px;
+        margin-top: 1vh;
+        vertical-align: middle;
+        & img{
+          height:40px;
+          float: left;
+          margin-top: 10px;
+        }
+        & .txt{
+          float: left;
+          margin-top: 10px;
+        }
       }
     }
 
-
-    & .content03{
-      color: #6495ED;
-      text-align: center;
-      width: 650px;
-      margin: 0 auto;
-      & img{
-        margin: 20px;
-        width: 25vh;
-      }
-    }
     & .clearfax{
       clear: both;
+      margin-top: 5vh;
     }
     & .retrieval {
-      margin-top: 30vh;
-      border: 1px solid #fff;
+      margin-top: 5vh;
+      border: 0px solid #fff;
       color: #fff;
-      background: transparent;
-      box-shadow: 0 0 0 transparent;
-      transition: background .45s @ease-out, box-shadow .45s @ease-out;
+      background: #108ee9;
+      //box-shadow: 0 0 0 transparent;
+      // transition: background .45s @ease-out, box-shadow .45s @ease-out;
       line-height: 36px;
       font-size: 24px;
-      height: 36px;
-      & span {
-        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-        transition: text-shadow .45s @ease-out;
-      }
+      height: 60px;
+      width: 150px;
+      // & span {
+      //   text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      //   transition: text-shadow .45s @ease-out;
+      // }
       &:hover {
-        color: #fff;
-        border-color: #fff;
-        background: rgba(255, 255, 255, 0.1);
-        box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
+        // color: #fff;
+        // border-color: #fff;
+        // background: rgba(255, 255, 255, 0.1);
+        // box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
         & span {
-          text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
+          // text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
         }
       }
     }
@@ -232,7 +248,7 @@
         text-align: center;
         width: 100%;
         margin: 0 auto;
-        height: 300px;
+        height: 200px;
       }
       & .title1{
         font-size: 28px;
@@ -240,15 +256,16 @@
     }
     & .div2{
       & .apple{
-        margin-top: 10px;
+        // margin-top: 10px;
         border: 1px solid #fff;
         color: #fff;
         background: transparent;
         box-shadow: 0 0 0 transparent;
         transition: background .45s @ease-out, box-shadow .45s @ease-out;
-        line-height: 36px;
+        height: 10vh;
+        line-height: 4vh;
         font-size: 20px;
-        width: 175px;
+        width: 25vh;
         height: 36px;
         & span {
           text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -262,17 +279,29 @@
           & span {
             text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
           }
+        }
+        & img{
+          height: 4vh;
+          margin-top: 0.5vh;
+          float: left;
+          margin-left: -2vh;
+        }
+        & .txt{
+          float: left;
+          margin-top: 1vh;
         }
       }
       & .android{
-        margin-top: 5px;
+        // margin-top: 5px;
         border: 1px solid #fff;
         color: #fff;
         background: transparent;
         box-shadow: 0 0 0 transparent;
         transition: background .45s @ease-out, box-shadow .45s @ease-out;
-        line-height: 36px;
-        width: 175px;
+        height: 10vh;
+        line-height: 4vh;
+        margin-top: -2vh;
+        width: 25vh;
         font-size: 20px;
         height: 36px;
         & span {
@@ -287,6 +316,16 @@
           & span {
             text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
           }
+        }
+        & img{
+          margin-left: -2vh;
+          height: 4vh;
+          margin-top: 0.5vh;
+          float: left;
+        }
+        & .txt{
+          float: left;
+          margin-top: 1vh;
         }
       }
     }
@@ -295,26 +334,16 @@
       margin: 0 auto;
       text-align: center;
       float: none;
+      & img{
+        height: 20vh;
+      }
     }
 
     & .div2{
       float: none;
     }
-    & .content03{
-      text-align: center;
-      margin: 0 auto;
-      position: static;
-      width: 300px;
-      & .title1{
-        font-size: 24px;
-      }
-      & .title2{
-        font-size: 20px;
-      }
-    }
-
-    .bg {
-      // background-attachment: inherit;
-    }
+    // .bg {
+    //   // background-attachment: inherit;
+    // }
   }
 }

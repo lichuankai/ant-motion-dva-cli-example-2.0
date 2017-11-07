@@ -16,12 +16,12 @@ class Content extends React.Component {
     delete props.isMode;
     const oneAnim = { y: '+=30', opacity: 0, type: 'from', ease: 'easeOutQuad' };
     const blockArray = [
-      { icon: 'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png', title: '专题数据库', content: '根据用户的需求从海量的基础专利信息数据中筛选，制定建设专利专题数据库。' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: '查新检索', content: '凭借丰富的信息资源、现代化检索手段，高素质的人才队伍，科学规范的管理，为用户提供客观公正、快捷准确的查新检索服务。' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: '分析评议', content: '综合利用知识产权竞争情报分析等手段，对只知识产权整体情况和竞争状况进行综合分析、评估、评价和审查。' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: '专利导航', content: '把专利运用嵌入产业技术创新、产品创新、组织创新和商业模式创新，引导和支撑产业科学发展的探索性工作。' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png', title: '专利运营', content: '以专利交易、专利许可、技术入股、质押融资等方式进行运作，实现无形资产变现。' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/ipwaQLBLflRfUrg.png', title: '知识产权图书', content: '数十种期刊、杂志，加强各单位在知识产权领域的交流与合作，共同促进知识产权事业发展。' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png', title: <a href="#">专题数据库</a>, content: '根据用户的需求从海量的基础专利信息数据中筛选，制定建设专利专题数据库。' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: <a href="#">查新检索</a>, content: '凭借丰富的信息资源、现代化检索手段，高素质的人才队伍，科学规范的管理，为用户提供客观公正、快捷准确的查新检索服务。' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: <a href="#">分析评议</a>, content: '综合利用知识产权竞争情报分析等手段，对只知识产权整体情况和竞争状况进行综合分析、评估、评价和审查。' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: <a href="#">专利导航</a>, content: '把专利运用嵌入产业技术创新、产品创新、组织创新和商业模式创新，引导和支撑产业科学发展的探索性工作。' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png', title: <a href="#">专利运营</a>, content: '以专利交易、专利许可、技术入股、质押融资等方式进行运作，实现无形资产变现。' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/ipwaQLBLflRfUrg.png', title: <a href="#">知识产权图书</a>, content: '数十种期刊、杂志，加强各单位在知识产权领域的交流与合作，共同促进知识产权事业发展。' },
     ];
     const children = blockArray.map((item, i) => {
       const id = `block${i}`;
